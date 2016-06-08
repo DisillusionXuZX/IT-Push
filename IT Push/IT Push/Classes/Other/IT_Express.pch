@@ -1,0 +1,44 @@
+//
+//  IT_Express.pch
+//  IT Express
+//
+//  Created by xuzx on 16/4/7.
+//  Copyright © 2016年 xuzx. All rights reserved.
+//
+
+#ifndef IT_Express_pch
+#define IT_Express_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file./Users/xuzx/Project/exercise/0331/IT Push/IT Push/Classes/Other/IT_Express.pch
+
+#endif /* IT_Express_pch */
+
+#import "UIBarButtonItem+Item.h"
+#import "UIImage+Render.h"
+#import "UIView+Frame.h"
+#define XZXColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define XZXBackgroundColor XZXColor(215, 215, 215)
+#define XZXOriginalColor XZXColor(61, 178, 115)
+
+#define XZXScreenW ([UIScreen mainScreen].bounds.size.width)
+#define XZXScreenH ([UIScreen mainScreen].bounds.size.height)
+
+#define XZXNavigationBarH 44
+
+#define likeCountPerPage 20
+
+#define ArticlePath @"http://v133-130-106-68.a035.g.tyo1.static.cnode.io:3000/articles"
+
+#define XZXFunc XZXLog(@"%s",__func__)
+
+#ifdef DEBUG // 调试
+
+#define XZXLog(...) NSLog(__VA_ARGS__);
+
+#else // 发布
+
+#define XZXLog(...)
+
+#endif
+
